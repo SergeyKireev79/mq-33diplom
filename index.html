@@ -10,11 +10,33 @@
 </head>
 
 <body>
+    <div class="popup">
+        <div class="popup-container">
+            <div class="popup-container-header">
+                <h2 class="popup-container-title">ваш фидбек</h2>
+            </div>
+            <div class="selected">
+                <div class="form-group">
+                    <label class="select-group">
+                      <span class="select-label">Как часто вы заходите на сайт?</span>
+                      <select class="select">
+                        <option value="day" selected>Почти каждый день</option>
+                        <option value="every-day">Каждый день</option>
+                                              </select>
+                                              <div class="arrow-up"></div>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <div class="page">
+
         <header class="header">
             <div class="box-content">
                 <div class="box">
                     <a class="logo" href="#0"><img src="svg\noemi-logo.svg" class="header-logo" alt="Логотип"></a>
+                    <span class="hamburger"></span>
                     <nav class="header-menu">
                         <ul class="menu-line">
                             <li class="menu-line-element">
@@ -37,7 +59,9 @@
                             </li>
                         </ul>
                     </nav>
+
                 </div>
+                <a class="logo-mob" href="#0"><img src="svg\noemi-logo.svg" class="header-logo-mob" alt="Логотип"></a>
                 <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
             </div>
         </header>
@@ -61,6 +85,7 @@
                                 <a class="trends-item-title" href="#0">сейчас в тренде: сад на подоконнике</a>
                             </h2>
                         </header>
+
                     </div>
                 </div>
                 <div class="trends-item-2">
@@ -177,7 +202,7 @@
                                     </li>
                                 </ul>
                                 <h3 class="article-head">
-                                    <a class="article-title" href="#0">Лучшие фестивали этого лета</a>
+                                    <a class="article-title" href="#0">Лучшие музыкальные фестивали этого лета</a>
                                 </h3>
                                 <time class="time-article" datetime="2019-06-10">10 июня 2019
                     </time>
@@ -408,45 +433,61 @@
                     </div>
                     <div class="shop-list">
                         <article class="product">
-                            <img src="images\shop-item-desk1.jpg" class="shop-list-picture" alt="Подушки на диван">
-                            <div class="product-article">
-                                <h3 class="product-name">подушки на диван</h3>
-                                <div class="product-title">
-                                    <p1>Набор из двух подушек с модными принтами. Видео о создании <a href="">здесь</a>.</p1>
+                            <picture class="shop-list-picture">
+                                <source media="(min-width: 1200px)" srcset="images\shop-item-desk1.jpg">
+                                <source media="(min-width: 768px)" srcset="images\shop-item-tablet1.jpg">
+                                <source media="(min-width: 360px)" srcset="images\shop-item-mobile1.jpg">
+                                <img class="shop-list-picture_ alt=" Подушки на диван ">
+                            </picture>
+
+                            <div class="product-article ">
+                                <h3 class="product-name ">подушки на диван</h3>
+                                <div class="product-title ">
+                                    <p1>Набор из двух подушек с модными принтами. Видео о создании <a href=" ">здесь</a>.</p1>
                                 </div>
-                                <div class="product-footer">
-                                    <div class="price">
-                                        <div class="old-price">
+                                <div class="product-footer ">
+                                    <div class="price ">
+                                        <div class="old-price ">
                                             <p2>1000 Р</p2>
                                         </div>
-                                        <div class="new-price">
+                                        <div class="new-price ">
                                             <p3>800 Р</p3>
                                         </div>
                                     </div>
-                                    <button class="go-shop-button">в магазин
+                                    <button class="go-shop-button ">в магазин
                               </button>
                                 </div>
                         </article>
-                        <article class="product">
-                            <img src="images\shop-item-desk2.jpg" class="shop-list-picture" alt="Подушки на диван">
-                            <div class="product-article">
-                                <h3 class="product-name">кукла «зайчик»</h3>
-                                <div class="product-title">
-                                    <p1>Интерьерная рукодельная кукла «Зайчик», созданию которой посвещена <a href="">весенняя серия постов </a>в блоке и несколько подкастов.</p1>
+                        <article class="product ">
+                            <picture class="shop-list-picture ">
+                                <source media="(min-width: 1200px) " srcset="images\shop-item-desk2.jpg ">
+                                <source media="(min-width: 768px) " srcset="images\shop-item-tablet2.jpg ">
+                                <source media="(min-width: 360px) " srcset="images\shop-item-mobile2.jpg ">
+                                <img class="shop-list-picture_ " alt="Кукла «Зайчик» ">
+                            </picture>
+                            <div class="product-article ">
+                                <h3 class="product-name ">кукла «зайчик»</h3>
+                                <div class="product-title ">
+                                    <p1>Интерьерная рукодельная кукла «Зайчик», созданию которой посвещена <a href=" ">весенняя серия постов </a>в блоке и несколько подкастов.</p1>
                                 </div>
-                                <div class="product-footer">
-                                    <div class="price">
+                                <div class="product-footer ">
+                                    <div class="price ">
 
-                                        <div class="new-price">
+                                        <div class="new-price ">
                                             <p3>3500 Р</p3>
                                         </div>
                                     </div>
-                                    <button class="go-shop-button">в магазин
+                                    <button class="go-shop-button ">в магазин
                               </button>
                                 </div>
                         </article>
-                        <article class="product">
-                            <img src="images\shop-item-desk3.jpg" class="shop-list-picture" alt="Подушки на диван">
+                        <article class="product ">
+                            <picture class="shop-list-picture ">
+                                <source media="(min-width: 1200px) " srcset="images\shop-item-desk3.jpg ">
+                                <source media="(min-width: 768px) " srcset="images\shop-item-tablet3.jpg ">
+                                <source media="(min-width: 360px) " srcset="images\shop-item-mobile3.jpg ">
+                                <img class="shop-list-picture_ alt="Шестиугольная рамка">
+                            </picture>
                             <div class="product-article">
                                 <h3 class="product-name">шестиуголная рамка</h3>
                                 <div class="product-title">
@@ -467,44 +508,44 @@
                         </article>
 
                         </div>
-                        </div>
-                        </div>
                     </div>
-                    <footer class="footer">
-                        <div class="box-content">
-                            <div class="footer-box">
-                                <ul class="social">
-                                    <li class="social-element">
-                                        <a href="#0" class="social-link-twitter">
-                                            <div class="social-link-text visually-hidden">twitter</div>
-                                        </a>
-                                    </li>
-                                    <li class="social-element">
-                                        <a class="social-link-pinterest" href="#0">
-                                            <div class="social-link-text visually-hidden">pinterest</div>
-                                        </a>
-                                    </li>
-                                    <li class="social-element">
-                                        <a class="social-link-facebook" href="#0">
-                                            <div class="social-link-text visually-hidden">facebook</div>
-                                        </a>
-                                    </li>
-                                    <li class="social-element">
-                                        <a class="social-link-instagram" href="#0">
-                                            <div class="social-link-text visually-hidden">instagram</div>
-                                        </a>
-                                    </li>
-                                    <li class="social-element">
-                                        <a class="social-link-tumblr" href="#0">
-                                            <div class="social-link-text visually-hidden">tumblr</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a class="copyright" href="#0">Copyright © 2009-2019 City Blog LLC.</a>
-                        </div>
-                    </footer>
                 </div>
+            </div>
+            <footer class="footer">
+                <div class="box-content">
+                    <div class="footer-box">
+                        <ul class="social">
+                            <li class="social-element">
+                                <a href="#0" class="social-link-twitter">
+                                    <div class="social-link-text visually-hidden">twitter</div>
+                                </a>
+                            </li>
+                            <li class="social-element">
+                                <a class="social-link-pinterest" href="#0">
+                                    <div class="social-link-text visually-hidden">pinterest</div>
+                                </a>
+                            </li>
+                            <li class="social-element">
+                                <a class="social-link-facebook" href="#0">
+                                    <div class="social-link-text visually-hidden">facebook</div>
+                                </a>
+                            </li>
+                            <li class="social-element">
+                                <a class="social-link-instagram" href="#0">
+                                    <div class="social-link-text visually-hidden">instagram</div>
+                                </a>
+                            </li>
+                            <li class="social-element">
+                                <a class="social-link-tumblr" href="#0">
+                                    <div class="social-link-text visually-hidden">tumblr</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="copyright" href="#0">Copyright © 2009-2019 City Blog LLC.</a>
+                </div>
+            </footer>
+        </div>
 </body>
 
 </html>
