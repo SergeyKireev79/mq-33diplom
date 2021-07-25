@@ -11,7 +11,9 @@
 
 <body>
     <div class="popup">
+
         <div class="popup-container">
+            <div class="close"></div>
             <div class="popup-container-header">
                 <h2 class="popup-container-title">ваш фидбек</h2>
             </div>
@@ -23,8 +25,29 @@
                         <option value="day" selected>Почти каждый день</option>
                         <option value="every-day">Каждый день</option>
                                               </select>
-                                              <div class="arrow-up"></div>
+                                              
                     </label>
+                    <div class="mailing">
+                        <span class="select-mail">Вы подписаны на e-mail рассылку?</span>
+                    </div>
+                    <label>
+                            <input type="radio" class="radio-group" name="radio-group">
+                            <span class="radio-group-btn"></span>
+                            <span class="radio-group-text">Да</span>
+                            
+                    </label>
+                    <label>
+                        <input type="radio" class="radio-group" name="radio-group">
+                        <span class="radio-group-btn"></span>
+                        <span class="radio-group-text">Нет</span>
+                        </label>
+
+                    <div class="site">
+                        <span class="site-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                        <textarea class="field" placeholder="Может, больше рецептов?"></textarea>
+                    </div>
+                    <button class="send-button">отправить
+                    </button>
                 </div>
             </div>
 
