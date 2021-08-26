@@ -5,14 +5,14 @@
             }
             
             @font-face {
-                font-family: "OpenSans";
+                font-family: Open Sans;
                 src: url(fonts\OpenSans-Bold.woff);
                 src: url(fonts\OpenSans-Bold.woff2);
                 src: url(fonts\OpenSans-Bold.ttf);
             }
             
             @font-face {
-                font-family: "OpenSans";
+                font-family: Open Sans;
                 src: url(fonts\OpenSans-Regular.woff);
                 src: url(fonts\OpenSans-Regular.woff2);
                 src: url(fonts\OpenSans-Regular.ttf);
@@ -30,7 +30,7 @@
             }
             
             .popup {
-                display: flex;
+                display: none;
                 width: 100%;
                 height: 100%;
                 position: fixed;
@@ -79,7 +79,7 @@
             
             .popup-container-title {
                 font-size: 20px;
-                font-family: "Open Sans";
+                font-family: Open Sans;
                 color: #0f0d0e;
                 font-weight: 700;
                 text-align: center;
@@ -104,7 +104,7 @@
                 font-size: 13px;
                 color: #000000;
                 font-weight: 400;
-                font-family: "Open Sans";
+                font-family: Open Sans;
             }
             
             .select {
@@ -119,7 +119,7 @@
                 border: none;
                 background-color: #f4f7f6;
                 font-size: 13px;
-                font-family: "Open Sans";
+                font-family: Open Sans;
                 color: #333333;
                 margin-top: 10px;
                 margin-bottom: 27px;
@@ -133,14 +133,14 @@
                 font-size: 13px;
                 color: #000000;
                 font-weight: 400;
-                font-family: "Open Sans";
+                font-family: Open Sans;
             }
             
             .radio-group-text {
                 font-size: 13px;
                 color: #000000;
                 font-weight: 400;
-                font-family: "Open Sans";
+                font-family: Open Sans;
                 margin-right: 18px;
             }
             
@@ -189,14 +189,14 @@
                 font-size: 13px;
                 color: #000000;
                 font-weight: 400;
-                font-family: "Open Sans";
+                font-family: Open Sans;
             }
             
             .field {
                 font-size: 13px;
                 color: #000000;
                 font-weight: 400;
-                font-family: "Open Sans";
+                font-family: Open Sans;
                 box-sizing: border-box;
                 width: 330px;
                 height: 131px;
@@ -474,7 +474,7 @@
             .trends-item-title {
                 display: flex;
                 font-size: 20px;
-                font-family: "Open Sans";
+                font-family: Open Sans;
                 color: #ffffff;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -499,7 +499,7 @@
             
             .border-menu-element {
                 font-size: 14px;
-                font-family: "Open Sans";
+                font-family: Open Sans;
                 color: #b59f5b;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -567,7 +567,7 @@
             .article-menu-element:hover {
                 font-size: 14px;
                 color: #b59f5b;
-                font-family: "Open Sans";
+                font-family: Open Sans;
             }
             
             .article-title {
@@ -584,7 +584,7 @@
             .article-title:hover {
                 font-size: 20px;
                 color: #b59f5b;
-                font-family: "Open Sans";
+                font-family: Open Sans;
             }
             
             .time-article,
@@ -769,20 +769,13 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: flex-start;
-                width: 270px;
+                width: 100%;
             }
             
             .tags-item {
                 list-style: none;
-                margin-left: 5px;
-            }
-            
-            .tags-item:nth-child(3n + 1) {
-                margin-left: 0px;
-            }
-            
-            .tags-item:nth-child(n + 4) {
-                margin-top: 6px;
+                margin-right: 5px;
+                margin-bottom: 6px;
             }
             
             .tags-element {
@@ -888,10 +881,6 @@
                 margin-right: auto;
             }
             
-            .shop-list-picture_ {
-                width: 100%;
-            }
-            
             .product-article {
                 outline: #b59f5b solid 2px;
                 margin-top: -30px;
@@ -904,7 +893,7 @@
             
             .product-name {
                 font-size: 20px;
-                font-family: "Open Sans";
+                font-family: Open Sans;
                 font-weight: 700;
                 text-transform: uppercase;
                 color: #0f0d0e;
@@ -914,7 +903,7 @@
                 font-weight: 400;
                 font-size: 15px;
                 color: #0f0d0e;
-                font-family: "Open Sans";
+                font-family: Open Sans;
             }
             
             a {
@@ -936,7 +925,7 @@
             
             .old-price {
                 font-size: 14px;
-                font-family: "Open Sans";
+                font-family: Open Sans;
                 font-weight: 700;
                 text-decoration: line-through;
                 color: #0f0d0e;
@@ -944,14 +933,14 @@
             
             .new-price {
                 font-size: 20px;
-                font-family: "Open Sans";
+                font-family: Open Sans;
                 font-weight: 700;
                 color: #0f0d0e;
             }
             
             .go-shop-button {
                 font-size: 14px;
-                font-family: "Open Sans";
+                font-family: Open Sans;
                 font-weight: 700;
                 color: #ffffff;
                 width: 140px;
@@ -1050,6 +1039,7 @@
             
             @media(max-width: 1199px) {
                 .header {
+                    background-image: url(../images/banner-bg-tablet.jpg);
                     max-width: 1199px;
                     min-width: 768px;
                 }
@@ -1139,6 +1129,7 @@
             
             @media(max-width: 767px) {
                 .header {
+                    background-image: url(../images/banner-mobile.jpg);
                     max-width: 767px;
                     min-width: 360px;
                 }
