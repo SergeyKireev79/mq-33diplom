@@ -6,16 +6,18 @@
             
             @font-face {
                 font-family: Open Sans;
-                src: url(fonts\OpenSans-Bold.woff);
-                src: url(fonts\OpenSans-Bold.woff2);
-                src: url(fonts\OpenSans-Bold.ttf);
+                src: url(fonts/OpenSans-Bold.woff);
+                src: url(fonts/OpenSans-Bold.woff2);
+                src: url(fonts/OpenSans-Bold.ttf);
+                font-weight: 700;
             }
             
             @font-face {
                 font-family: Open Sans;
-                src: url(fonts\OpenSans-Regular.woff);
-                src: url(fonts\OpenSans-Regular.woff2);
-                src: url(fonts\OpenSans-Regular.ttf);
+                src: url(fonts/OpenSans-Regular.woff);
+                src: url(fonts/OpenSans-Bold.woff2);
+                src: url(fonts/OpenSans-Regular.ttf);
+                font-weight: 400;
             }
             
             html,
@@ -111,9 +113,10 @@
                 width: 100%;
                 height: 48px;
                 -webkit-appearance: none;
-                background-image: url(https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/select-arrows.svg);
+                background-image: url(svg/form-arrows.svg);
                 background-repeat: no-repeat;
                 background-position: right 5px center;
+                background-size: 7px;
                 padding-left: 10px;
                 padding-right: 25px;
                 border: none;
@@ -144,33 +147,21 @@
                 margin-right: 18px;
             }
             
-            .radio-group-btn {
-                position: relative;
+            .radio-group-text::before {
+                content: '';
                 display: inline-block;
                 width: 15px;
                 height: 15px;
-                border-radius: 50%;
-                background-color: #ffffff;
-                border: 1px solid #b59f5b;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 15px;
+                background-image: url(svg/form-empty-circle.svg);
                 vertical-align: middle;
-                margin-right: 4px;
+                margin-right: 5px;
             }
             
-            .radio-group-btn::before {
-                content: '';
-                display: inline-block;
-                width: 11px;
-                height: 11px;
-                border-radius: 50%;
-                background-color: #b59f5b;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%) scale(0);
-            }
-            
-            .radio-group:checked+.radio-group-btn::before {
-                transform: translate(-50%, -50%) scale(1);
+            .radio-group:checked~.radio-group-text::before {
+                background-image: url(svg/form-circle.svg)
             }
             
             .radio-group {
@@ -278,7 +269,7 @@
                 list-style: none;
             }
             
-            .menu-line-element:nth-child(n + 2) {
+            .menu-line-element:nth-child(n+2) {
                 margin-left: 35px;
             }
             
@@ -507,7 +498,7 @@
                 z-index: 1;
             }
             
-            .border-menu-item:nth-child(n + 2) {
+            .border-menu-item:nth-child(n+2) {
                 margin-left: 20px;
             }
             
@@ -560,7 +551,7 @@
                 text-decoration: none;
             }
             
-            .article-menu-item:nth-child(n + 2) {
+            .article-menu-item:nth-child(n+2) {
                 margin-left: 20px;
             }
             
@@ -622,7 +613,7 @@
                 margin-left: 120px;
             }
             
-            .aside-posts:nth-child(n + 2) {
+            .aside-posts:nth-child(n+2) {
                 margin-top: 60px;
             }
             
@@ -644,7 +635,7 @@
                 display: flex;
             }
             
-            .new-posts-article:nth-child(n + 2) {
+            .new-posts-article:nth-child(n+2) {
                 margin-top: 22px;
             }
             
@@ -720,7 +711,7 @@
                 top: 0;
                 right: 0;
                 background-color: #b59f5b;
-                background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+                background-image: url(svg/search.svg);
                 background-repeat: no-repeat;
                 background-size: 18px;
                 background-position: center center;
@@ -804,7 +795,7 @@
                 padding-bottom: 14px;
             }
             
-            .topics-box:nth-child(n + 3) {
+            .topics-box:nth-child(n+3) {
                 padding-top: 11px;
             }
             
@@ -876,7 +867,6 @@
             }
             
             .shop-list-picture {
-                width: 88%;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -914,6 +904,7 @@
             .product-footer {
                 display: flex;
                 margin-top: 24px;
+                justify-content: space-between;
             }
             
             .price {
@@ -971,12 +962,12 @@
                 justify-content: center;
             }
             
-            .social-element:nth-child(n + 2) {
+            .social-element:nth-child(n+2) {
                 margin-left: 30px;
             }
             
             .social-link-twitter {
-                background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
+                background-image: url(svg/004-twitter.svg);
                 display: inline-block;
                 width: 20px;
                 height: 20px;
@@ -986,7 +977,7 @@
             }
             
             .social-link-pinterest {
-                background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
+                background-image: url(svg/001-pinterest.svg);
                 display: inline-block;
                 width: 20px;
                 height: 20px;
@@ -996,7 +987,7 @@
             }
             
             .social-link-facebook {
-                background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg);
+                background-image: url(svg/002-facebook-logo.svg);
                 display: inline-block;
                 width: 20px;
                 height: 20px;
@@ -1006,7 +997,7 @@
             }
             
             .social-link-instagram {
-                background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg);
+                background-image: url(svg/005-instagram.svg);
                 display: inline-block;
                 width: 20px;
                 height: 20px;
@@ -1016,7 +1007,7 @@
             }
             
             .social-link-tumblr {
-                background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+                background-image: url(svg/003-tumblr.svg);
                 display: inline-block;
                 width: 20px;
                 height: 20px;
